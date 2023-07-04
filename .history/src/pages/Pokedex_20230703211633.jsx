@@ -34,7 +34,7 @@ const Pokedex = () => {
 
   axios
   .get(Url)
-  .then(({ data }) => setPokemons(data.results))
+  .then(({ data }) => setTypes(data.results))
   .catch((err) => console.log(err))
     }
   }, [currentType])

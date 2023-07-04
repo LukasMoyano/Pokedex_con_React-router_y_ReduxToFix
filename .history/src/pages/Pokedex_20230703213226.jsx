@@ -9,7 +9,7 @@ const Pokedex = () => {
   console.log({pokemons})
   const [namePokemon, setNamePokemon] = useState("");
 
-  const [types, setTypes] = useState([]);
+  const [types, setPokemons] = useState([]);
 
   const [currentType, setCurrentType] = useState("");
   
@@ -34,7 +34,7 @@ const Pokedex = () => {
 
   axios
   .get(Url)
-  .then(({ data }) => setPokemons(data.results))
+  .then(({ data }) => setPokemons (data.results))
   .catch((err) => console.log(err))
     }
   }, [currentType])

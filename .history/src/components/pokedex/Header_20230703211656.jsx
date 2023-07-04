@@ -1,4 +1,4 @@
-import FooterHome from "../Home/FooterHome";
+import FooterHome from "../components/home/FooterHome";
 
 const Home = () => {
   return (

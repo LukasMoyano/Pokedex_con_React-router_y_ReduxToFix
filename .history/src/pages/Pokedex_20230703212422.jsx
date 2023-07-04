@@ -9,7 +9,7 @@ const Pokedex = () => {
   console.log({pokemons})
   const [namePokemon, setNamePokemon] = useState("");
 
-  const [types, setTypes] = useState([]);
+  const [types, setPokemons] = useState([]);
 
   const [currentType, setCurrentType] = useState("");
   
